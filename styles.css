@@ -1,4 +1,10 @@
-/* reset */
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  /* Alterando a contagem de tamanho a partir da borda */
+  box-sizing: border-box;
+}
 
 /* geral */
 body {
