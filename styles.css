@@ -64,3 +64,8 @@ ul {
   border-radius: 50%;
   width: 70px;
 }
+
+#social img {
+  border-radius: 10%;
+  width: 32px;
+}
