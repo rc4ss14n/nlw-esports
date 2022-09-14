@@ -30,6 +30,14 @@ main {
   width: 90%;
   /* centralizando */
   margin: auto;
+
+  /* formas para espaçamento de itens. */
+  /* display: flex;
+  flex-direction: column;
+  gap: 24px; */
+
+  display: grid;
+  gap: 24px;
 }
 
 section {
@@ -45,11 +53,12 @@ section p {
   letter-spacing: -0.18px;
 }
 
-ul {
+section ul {
   /* ajusta o posicionamento do conteúdo que está dentro da caixa-mãe UL 
   'gap' = é o espaço entre um elemento e outro*/
   display: flex;
   gap: 16px;
+  margin-top: 24px;
 }
 
 /* Ajustes específicos de elementos por ID ou classe. */
