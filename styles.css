@@ -51,3 +51,10 @@ ul {
   display: flex;
   gap: 16px;
 }
+
+/* Ajustes específicos de elementos por ID ou classe. */
+#my-games img {
+  width: 90px;
+  /* para cantos arredondados */
+  border-radius: 8px;
+}
