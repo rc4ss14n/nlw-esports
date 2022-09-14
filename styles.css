@@ -58,3 +58,9 @@ ul {
   /* para cantos arredondados */
   border-radius: 8px;
 }
+
+#channels img {
+  /* forma um circulo ao arredondar a bordar */
+  border-radius: 50%;
+  width: 70px;
+}
