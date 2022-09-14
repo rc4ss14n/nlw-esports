@@ -75,6 +75,9 @@ section ul {
   display: flex;
   gap: 16px;
   margin-top: 24px;
+
+  /* direcionar novos elementos para baixo quando atingir o limite do container */
+  flex-wrap: wrap;
 }
 
 /* Ajustes específicos de elementos por ID ou classe. */
