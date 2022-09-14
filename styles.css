@@ -44,3 +44,10 @@ section p {
   color: #A1A1AA;
   letter-spacing: -0.18px;
 }
+
+ul {
+  /* ajusta o posicionamento do conteúdo que está dentro da caixa-mãe UL 
+  'gap' = é o espaço entre um elemento e outro*/
+  display: flex;
+  gap: 16px;
+}
