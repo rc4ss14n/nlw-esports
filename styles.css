@@ -24,12 +24,22 @@ body {
   line-height: 160%;
 }
 
+header {
+  /* para alinhar ao centro quando possuir propriedades de texto, isso inclui as imagens. */
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+}
+
 main {
   max-width: 580px;
   /* tamanho quando a tela for menor que 'max-width' */
   width: 90%;
   /* centralizando */
-  margin: auto;
+  margin: 32px auto;
 
   /* formas para espaçamento de itens. */
   /* display: flex;
@@ -80,7 +90,9 @@ section ul {
   flex-wrap: wrap;
 }
 
-/* Ajustes específicos de elementos por ID ou classe. */
+/* 
+# AJUSTES ESPECÍFICOS DE ELEMENTOS POR 'ID' OU 'CLASS'. 
+*/
 #my-games img {
   width: 90px;
   /* para cantos arredondados */
