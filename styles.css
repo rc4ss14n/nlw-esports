@@ -26,6 +26,13 @@ body {
 
 header {
   padding-top: 32px;
+  /* 
+  pré-reserva de espaço para o elemento, usando a função 'calc()'.
+  cal(expressão)
+  cal(tamanho_div + padding)
+  */
+  height: calc(120px + 32px);
+
   /* para alinhar ao centro quando possuir propriedades de texto, isso inclui as imagens. */
   /* text-align: center; */
 }
