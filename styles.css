@@ -167,7 +167,8 @@ footer img {
 
 /* aplicando a animação aos elementos desejados. */
 header div {
-  animation: fromTop 1s;
+  /* adiciona a animação já carregando as propriedades de inicio (backwards) e espera '1s' para começar a animação */
+  animation: fromTop .7s .4s backwards;
 }
 
 /* Definindo qual o efeito da animação */
@@ -176,12 +177,16 @@ header div {
   /* de onde vai: 0%*/
   from {
     opacity: 0;
-    transform: translateY(-500px);
+    /* transform: translateY(-50px); */
+    /* transform: translateX(-500px); */
+    transform: translate(-500px, -100px);
   }
 
   /* até chegar em: 100%*/
   to {
     opacity: 1;
-    transform: translateY(0);
+    /* transform: translateY(0); */
+    /* transform: translateX(0); */
+    transform: translate(0);
   }
 }
