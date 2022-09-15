@@ -114,15 +114,19 @@ section ul {
   width: 90px;
   /* para cantos arredondados */
   border-radius: 8px;
+
+  border: 1px solid #443e54;
 }
 
 #channels img {
   /* forma um circulo ao arredondar a bordar */
   border-radius: 50%;
   width: 70px;
+  border: 1px solid #443e54;
 }
 
 #social img {
-  border-radius: 10%;
+  border-radius: 50%;
   width: 32px;
+  border: 1px solid #443e54;
 }
