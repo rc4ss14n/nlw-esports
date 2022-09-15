@@ -107,6 +107,15 @@ section ul {
   flex-wrap: wrap;
 }
 
+footer {
+  color: #A1A1AA;
+  text-align: center;
+}
+
+footer img {
+  width: 32px;
+}
+
 /* 
 # AJUSTES ESPECÍFICOS DE ELEMENTOS POR 'ID' OU 'CLASS'. 
 */
