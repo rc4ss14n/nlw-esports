@@ -43,6 +43,13 @@ header div {
 
   display: flex;
 
+  /* trabalhando em conjunto com o 'hover' na trasição */
+  transition: transform .3s;
+}
+
+/* efeito ao passar o mouse por cima. */
+header div:hover {
+  transform: scale(1.1);
 }
 
 header div img {
@@ -105,6 +112,15 @@ section ul {
 
   /* direcionar novos elementos para baixo quando atingir o limite do container */
   flex-wrap: wrap;
+}
+
+/* Efeito de transição nos cards das seções */
+section ul li {
+  transition: transform .3s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
 }
 
 footer {
