@@ -155,3 +155,26 @@ footer img {
   width: 32px;
   border: 1px solid #443e54;
 }
+
+/* ANIMAÇÃO */
+
+/* aplicando a animação aos elementos desejados. */
+header div {
+  animation: fromTop 1s;
+}
+
+/* Definindo qual o efeito da animação */
+@keyframes fromTop {
+
+  /* de onde vai: 0%*/
+  from {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  /* até chegar em: 100%*/
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
