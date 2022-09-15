@@ -25,12 +25,29 @@ body {
 }
 
 header {
+  padding-top: 32px;
   /* para alinhar ao centro quando possuir propriedades de texto, isso inclui as imagens. */
-  text-align: center;
+  /* text-align: center; */
 }
 
-header img {
+header div {
   width: 120px;
+
+  /* Para alinhar itens sem propriedades de texto. exemplo a 'div' */
+  margin: auto;
+
+  /* borda multi cor */
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  border-radius: 50%;
+  padding: 4px;
+
+  display: flex;
+
+}
+
+header div img {
+  /* Ajustando o 'width' para ficar relativo ao tamanho do 'div' que ele está dentro */
+  width: 100%;
   border-radius: 50%;
 }
 
