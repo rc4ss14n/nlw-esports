@@ -168,23 +168,36 @@ footer img {
 /* ANIMAÇÃO */
 
 /* aplicando a animação aos elementos desejados. */
-header div {
+main header div {
   /* adiciona a animação já carregando as propriedades de inicio (backwards) e espera '1s' para começar a animação */
-  animation: anime_header .9s .3s backwards;
+  animation: animeHeader .9s .2s backwards;
 }
 
-section {
-  animation: animeCards .7s .5s backwards;
+main section {
+  animation: animeCards .7s backwards;
 }
 
-section ul li {
+/* Animando por elemento filho com delay, seguindo as propriedades anteriores */
+main section:nth-child(1) {
+  animation-delay: 0;
+}
+
+main section:nth-child(2) {
+  animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+  animation-delay: .8s;
+}
+
+main section ul li {
   animation: animeCards2 .9s .9s backwards;
 
 }
 
 /* Definindo qual o efeito da animação */
 /* animação 1*/
-@keyframes anime_header {
+@keyframes animeHeader {
 
   /* de onde vai: 0%*/
   from {
@@ -220,7 +233,7 @@ section ul li {
 @keyframes animeCards2 {
   0% {
     opacity: 0;
-    transform: translateY(-500px);
+    transform: translateY(500px);
   }
 
   100% {
