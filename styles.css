@@ -168,7 +168,7 @@ footer img {
 /* ANIMAÇÃO */
 
 /* aplicando a animação aos elementos desejados. */
-main header div {
+header div {
   /* adiciona a animação já carregando as propriedades de inicio (backwards) e espera '1s' para começar a animação */
   animation: animeHeader .9s .2s backwards;
 }
