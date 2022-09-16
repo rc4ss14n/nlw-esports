@@ -148,6 +148,8 @@ footer img {
   border-radius: 8px;
 
   border: 1px solid #443e54;
+
+  transition: transform 3s;
 }
 
 #channels img {
@@ -168,11 +170,21 @@ footer img {
 /* aplicando a animação aos elementos desejados. */
 header div {
   /* adiciona a animação já carregando as propriedades de inicio (backwards) e espera '1s' para começar a animação */
-  animation: fromTop .7s .4s backwards;
+  animation: anime_header .9s .3s backwards;
+}
+
+section {
+  animation: animeCards .7s .5s backwards;
+}
+
+section ul li {
+  animation: animeCards2 .9s .9s backwards;
+
 }
 
 /* Definindo qual o efeito da animação */
-@keyframes fromTop {
+/* animação 1*/
+@keyframes anime_header {
 
   /* de onde vai: 0%*/
   from {
@@ -188,5 +200,31 @@ header div {
     /* transform: translateY(0); */
     /* transform: translateX(0); */
     transform: translate(0);
+  }
+}
+
+/* animação 2 */
+@keyframes animeCards {
+  0% {
+    opacity: 0;
+    transform: translate(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* animação 3 */
+@keyframes animeCards2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
