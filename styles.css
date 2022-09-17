@@ -170,33 +170,52 @@ footer img {
 /* aplicando a animação aos elementos desejados. */
 header div {
   /* adiciona a animação já carregando as propriedades de inicio (backwards) e espera '1s' para começar a animação */
-  animation: animeHeader .9s .2s backwards;
+  animation: animeHeader .9s .1s backwards;
 }
 
-main section {
-  animation: animeCards .7s backwards;
-}
+/* main section {
+  animation: animeCardsFromLeft .7s backwards;
+} */
 
 /* Animando por elemento filho com delay, seguindo as propriedades anteriores */
 main section:nth-child(1) {
+  animation: animeCardsFromLeft .7s backwards;
   animation-delay: 0;
 }
 
 main section:nth-child(2) {
-  animation-delay: .4s;
+  animation: animeCardsFromRight .7s backwards;
+  animation-delay: .3s;
 }
 
 main section:nth-child(3) {
-  animation-delay: .8s;
+  animation: animeCardsFromLeft .7s backwards;
+  animation-delay: .6s;
 }
 
+/* 
 main section ul li {
-  animation: animeCards2 .9s .9s backwards;
+  animation: animeCardsFromLeft .9s .3s backwards;
+} */
 
+#my-games ul li {
+  animation: animeCardsFromRight .9s .3s backwards;
+}
+
+#channels ul li {
+  animation: animeCardsFromLeft .9s .6s backwards;
+}
+
+#social ul li {
+  animation: animeCardsFromRight .9s .9s backwards;
+}
+
+footer {
+  animation: animeFooter .9s 1s backwards;
 }
 
 /* Definindo qual o efeito da animação */
-/* animação 1*/
+/* animação 1 - em diagonal da esquerda para direita e de cima para baixo.*/
 @keyframes animeHeader {
 
   /* de onde vai: 0%*/
@@ -216,11 +235,11 @@ main section ul li {
   }
 }
 
-/* animação 2 */
-@keyframes animeCards {
+/* animação 2 - da esquerda para direita*/
+@keyframes animeCardsFromLeft {
   0% {
     opacity: 0;
-    transform: translate(-500px);
+    transform: translateX(-500px);
   }
 
   100% {
@@ -229,15 +248,26 @@ main section ul li {
   }
 }
 
-/* animação 3 */
-@keyframes animeCards2 {
+/* animação 3 - da direita para esquerda*/
+@keyframes animeCardsFromRight {
   0% {
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateX(500px);
   }
 
   100% {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@keyframes animeFooter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
