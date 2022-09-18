@@ -266,7 +266,6 @@ footer {
 @keyframes animeFooter {
   0% {
     opacity: 0;
-    transform: rotate(360deg);
   }
 
   100% {
