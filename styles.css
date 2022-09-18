@@ -17,6 +17,8 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #121214;
+  /* ocultando barras de rolagem */
+  overflow: hidden;
 }
 
 body {
@@ -264,6 +266,7 @@ footer {
 @keyframes animeFooter {
   0% {
     opacity: 0;
+    transform: rotate(360deg);
   }
 
   100% {
